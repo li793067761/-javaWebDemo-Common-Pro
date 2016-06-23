@@ -62,7 +62,7 @@ public class DIYJerseyClient<R, T> {
 				client.register(clazz);
 			}
 		}
-		String urlStr = "http://localhost/Demo-Web/jersey" + requestUrl;
+		String urlStr = "http://localhost:8080/Demo-Web/jersey" + requestUrl;
 		WebTarget webTarget = client.target(urlStr);
 		if (!CollectionUtils.isEmpty(queryParams)) {
 			for (final AtupRequestParam atupRequestParam : queryParams) {
